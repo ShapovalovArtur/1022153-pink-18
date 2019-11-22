@@ -130,6 +130,28 @@
         </li>
       </ul>
     </section>
+    <section class="photo-poster">
+      <h2 class="visually-hidden">Загрузка и редактирование фото</h2>
+      <p class="photo-poster__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <img class="photo-poster__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+        alt="Фото для размещения">
+      <ul class="photo-poster__tools photo-poster__tools--switchable">
+        <li><button class="photo-poster__tool photo-poster__tool--crop">
+            <input class="photo-poster__tool-range photo-poster__tool-range--crop" type="range" min="1" max="100"
+              value="80" class="slider" id="range-crop"></button>
+        </li>
+        <li><button class="photo-poster__tool photo-poster__tool--fill">
+            <input class="photo-poster__tool-range photo-poster__tool-range--fill" type="range" min="1" max="100"
+              value="50" class="slider" id="range-fill"></button>
+        </li>
+        <li><button class="photo-poster__tool photo-poster__tool--contrast">
+            <input class="photo-poster__tool-range photo-poster__tool-range--contrast" type="range" min="1" max="100"
+              value="50" class="slider" id="range-contrast"></button>
+        </li>
+      </ul>
+      <button class="photo-poster__post button">Запостить</button>
+      <button class="photo-poster__cancel button">Отмена</button>
+    </section>
   </main>
   <footer class="page-footer">
     <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="логитип сайта">
