@@ -1,8 +1,8 @@
 // подсветка блоков
-
+.main-nav { outline: yellow 3px solid; }
 .page-header { outline: chartreuse 3px solid; }
 .body { outline: white 3px solid; }
-
+.page-header__logo { outline: blue 3px solid; }
 
 // фон
 body {
@@ -10,13 +10,13 @@ body {
   background-size: 320px auto;
   min-height: 750px;
 }
-@media (min-width: 768px) {
+@media (min-width: @tabletwidth) {
   body {
     background: #292929 url("../img/index-tablet.jpg") no-repeat 50% 0;
     background-size: 660px auto;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: @desktopwidth) {
   body {
     background: #292929 url("../img/index-desktop.jpg") no-repeat 50% 0;
     background-size: 1200px auto;
