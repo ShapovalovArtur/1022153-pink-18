@@ -1,7 +1,24 @@
 .welcome {
-  background-color: @black;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  // background-color: @black; временно
+  //background-image: url("../../img/bg-back-mobile@1x.jpg"); временно
   background-repeat: no-repeat;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 320px; // временно для сетки
+}
+
+@media (min-width: @tabletwidth) {
+  .welcome {
+  width: 660px;
+  min-height: 620px; //временнл для сетки
+  }
+}
+
+@media (min-width: @desktoptwidth) {
+  .welcome {
+  width: 1200px;
+  min-height: 743px; //временнл для сетки
+  }
 }
 
 .welcome__slogan {
@@ -9,12 +26,12 @@
 }
 
 .download-app {
-  background-color: @black;
+  // background-color: @black; временно
 }
 
 .download-app__download {
   color: @white;
-  background-color: @black;
+  // background-color: @black; временно
   font-weight: bold;
   line-height: 1;
   text-align: center;
