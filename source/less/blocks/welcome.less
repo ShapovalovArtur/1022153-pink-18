@@ -4,46 +4,23 @@
   background-repeat: no-repeat;
   width: 320px;
   margin: 0 auto;
-  min-height: 320px; // временно для сетки
+  min-height: 667px; // временно для сетки
 }
 
 @media (min-width: @tabletwidth) {
   .welcome {
-  width: 660px;
-  min-height: 620px; //временнл для сетки
+    width: 660px;
+    min-height: 620px; //временно для сетки
   }
 }
 
-@media (min-width: @desktoptwidth) {
+@media (min-width: @desktopwidth) {
   .welcome {
-  width: 1200px;
-  min-height: 743px; //временнл для сетки
+    width: 1200px;
+    min-height: 743px; //временно для сетки
   }
 }
 
 .welcome__slogan {
   .intro-font;
-}
-
-.download-app {
-  // background-color: @black; временно
-}
-
-.download-app__download {
-  color: @white;
-  // background-color: @black; временно
-  font-weight: bold;
-  line-height: 1;
-  text-align: center;
-}
-
-.download-app a {
-  .unstyle;
-}
-
-.download-app p {
-  color: @white;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
 }
