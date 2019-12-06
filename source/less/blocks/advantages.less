@@ -40,8 +40,8 @@
   .unstyle;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
-  width: 320px;
+  padding: 0 20px;
+  width: 280px;
   min-height: 790px;//временно для сетки
   // background-image: url("../../img/bg-triangle-white.svg"); временно
   // background-repeat: no-repeat;
@@ -50,6 +50,9 @@
   flex-direction: column;
 }
 
+.advantages__item:last-child {
+  display: none;
+}
 
 .advantages__title {
   color: @black;
@@ -58,9 +61,23 @@
 }
 
 .advantages__item {
-  width: 320px;//временно
+  width: 280px;//временно
   min-height: 130px; //временно для сетки
   font-size: 14px;
   line-height: 24px;
   color: @dark;
+}
+
+
+
+@media (min-width: @tabletwidth) {
+  .advantages__list {
+  width: 620px;//временно
+  min-height: 1024px; //временно для сетки
+  align-items: flex-end;
+  }
+  .advantages__item {
+  width: 320px;//временно
+  min-height: 140px; //временно для сетки
+  }
 }
