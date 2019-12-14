@@ -17,3 +17,17 @@
   min-height: 46px;
   padding-top: 17px;
 }
+
+@media (min-width: @desktopwidth) {
+  .site-list {
+  display: flex;
+  justify-content: space-between;
+  }
+  .site-list__item:first-child {
+    margin-left: 20px;
+  }
+
+  .site-list__item:last-child {
+    margin-right: 20px;
+  }
+}
