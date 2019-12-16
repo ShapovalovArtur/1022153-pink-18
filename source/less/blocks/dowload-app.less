@@ -17,10 +17,33 @@
   border: solid 3px #ffffff;
   border-radius: 30px;
   margin: 30px auto;
+  letter-spacing: 2px;
+}
+.download-app__list {
+  .unstyle;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: center;
 }
 
 .download-app a {
   .unstyle;
+  display: inline-block;
+  width: 80px;
+  height: 60px;
+}
+
+.download-app__apple {
+  background: url(../../img/logo-apple.svg) no-repeat center 1px;
+}
+
+.download-app__android {
+  background: url(../../img/logo-android.svg) no-repeat center 10px;
+}
+
+.download-app__windows {
+  background: url(../../img/logo-microsoft.svg) no-repeat center 14px;
 }
 
 .download-app p {
@@ -28,4 +51,7 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 32px;
 }
