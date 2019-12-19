@@ -1,6 +1,6 @@
 .advantages {
   //background-color: @white; временно
-  min-height: 1010px;//временно для сетки
+  //min-height: 1010px;//временно для сетки
 }
 
 .advantages__slogan {
@@ -9,13 +9,20 @@
   text-align: center;
   color: @dark;
   width: 260px;
-  min-height: 150px; //для сетки
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
+
+.advantages__title {
+  color: @black;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 87px;
+}
+
 
 @media (min-width: @tabletwidth) {
   .advantages__slogan {
@@ -36,6 +43,10 @@
   display: block;
 }
 
+.advantages__slogan--answer {
+  margin-top: 30px;
+}
+
 .advantages__list {
   .unstyle;
   text-align: center;
@@ -54,11 +65,7 @@
   display: none;
 }
 
-.advantages__title {
-  color: @black;
-  font-size: 18px;
-  line-height: 24px;
-}
+
 
 .advantages__item {
   width: 280px;//временно
