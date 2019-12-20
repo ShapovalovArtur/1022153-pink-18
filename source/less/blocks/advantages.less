@@ -84,25 +84,75 @@
 }
 
 @media (min-width: @tabletwidth) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+  }
+
   .advantages__slogan {
-    width: 600px;
-    min-height: 170px;// для сетки
+    width: 640px;
+    font-size: 40px;
+    padding-top: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .advantages__slogan--answer {
+    margin-top: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: -10px; //пока не разобрался со шрифтом
   }
 
   .advantages__list {
-    width: 620px;//временно
-    min-height: 850px; //временно для сетки
+    width: 660px;//временно
     align-items: flex-end;
+    text-align: left;
+  }
+
+  .advantages__item:first-child {
+  background: url("../../img/bg-triangle-white.svg") no-repeat 100% top;
   }
 
   .advantages__item {
-    width: 320px;//временно
-    min-height: 140px; //временно для сетки
+    width: 310px;//временно
+    margin-bottom: 34px;;
+  }
+
+  .advantages__item:first-child .advantages__title {
+    margin-top: 105px;
   }
 
   .advantages__item:last-child {
     display: block;
     margin-top: auto;
+    padding-bottom: 8px;
+  }
+
+  .advantages__item:last-child::after {
+    content: "";
+    position: absolute;
+    margin-left: -309px;
+    margin-top: -440px;
+    width: 268px;
+    height: 481px;
+    background: url("../../img/iphone-screen-3-tablet@1x.png") no-repeat;
+  }
+
+  .advantages__subtitle {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    b {
+      display: block;
+      font-size: 30px;
+      width: 170px;
+      margin-left: 300px;
+      margin-top: 98px;
+    }
+    a {
+      display: block;
+    }
   }
 }
 
