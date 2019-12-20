@@ -1,5 +1,6 @@
 .advantages {
   background-color: @white;
+  //min-height: 1010px;//временно для сетки
 }
 
 .advantages__slogan {
@@ -7,24 +8,202 @@
   line-height: normal;
   text-align: center;
   color: @dark;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.advantages__slogan--question,
+.advantages__slogan--answer {
+  display: block;
+}
+
+.advantages__slogan--answer {
+  margin-top: 25px;
 }
 
 .advantages__list {
   .unstyle;
   text-align: center;
-  background-image: url("../../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-color: @lightGrey;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  background: url("../../img/bg-triangle-white.svg") no-repeat top @lightGrey;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__title {
   color: @black;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .advantages__item {
   font-size: 14px;
   line-height: 24px;
   color: @dark;
+  margin-bottom: 31px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages__item:first-child {
+  background: url("../../img/bg-triangle-white.svg") no-repeat top;
+
+  .advantages__title {
+    margin-top: 97px;
+  }
+}
+
+.advantages__item:last-child {
+  padding-bottom: 287px;
+}
+
+.advantages__item:last-child::after {
+  content: "";
+  position: absolute;
+  margin-left: -78px;
+  margin-top: 40px;
+  width: 160px;
+  height: 278px;
+  background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
+.advantages__subtitle {
+  display: none;
+}
+
+@media (min-width: @tabletwidth) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages__slogan {
+    width: 640px;
+    font-size: 40px;
+    padding-top: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .advantages__slogan--answer {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: -10px; //пока не разобрался со шрифтом
+  }
+
+  .advantages__list {
+    width: 660px;//временно
+    align-items: flex-end;
+    text-align: left;
+  }
+
+  .advantages__item:first-child {
+    background: url("../../img/bg-triangle-white.svg") no-repeat 100% top;
+  }
+
+  .advantages__item {
+    width: 310px;
+    margin-bottom: 34px;
+  }
+
+  .advantages__item:first-child .advantages__title {
+    margin-top: 105px;
+  }
+
+  .advantages__item:last-child {
+    display: block;
+    margin-top: auto;
+    padding-bottom: 8px;
+  }
+
+  .advantages__item:last-child::after {
+    content: "";
+    position: absolute;
+    margin-left: -309px;
+    margin-top: -440px;
+    width: 268px;
+    height: 481px;
+    background: url("../../img/iphone-screen-3-tablet@1x.png") no-repeat;
+  }
+
+  .advantages__subtitle {
+    display: block;
+    width: 660px;
+    margin: 0 auto;
+    position: relative;
+
+    b {
+      display: block;
+      font-size: 30px;
+      width: 170px;
+      margin-left: 330px;
+      margin-top: 98px;
+    }
+
+    a {
+      display: block;
+      color: @lipstick;
+      margin-left: 330px;
+      margin-top: 10px;
+      line-height: 24px;
+      font-size: 14px;
+    }
+
+    span {
+      display: block;
+      font-size: 14px;
+      margin-left: 328px;
+      margin-top: 12px;
+      line-height: 24px;
+    }
+
+    svg {
+      position: absolute;
+      top: 59px;
+      left: 21px;
+      width: 238px;
+      height: 275px;
+      fill: @lipstick;
+    }
+  }
+}
+
+@media (min-width: @desktopwidth) {
+  .advantages__slogan {
+    width: 1140px;
+    min-height: 255px;// для сетки
+  }
+
+  .advantages__list {
+    width: 940px;//временно
+    min-height: 1050px; //временно для сетки
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .advantages__item {
+    width: 270px;//временно
+    min-height: 230px; //временно для сетки
+  }
+
+  .advantages__item:last-child {
+    display: block;
+    margin-left: auto;
+  }
 }
