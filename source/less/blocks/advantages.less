@@ -54,8 +54,6 @@
 }
 
 .advantages__item:first-child {
-  background: url("../../img/bg-triangle-white.svg") no-repeat top;
-
   .advantages__title {
     margin-top: 97px;
   }
@@ -107,10 +105,6 @@
     width: 660px;//временно
     align-items: flex-end;
     text-align: left;
-  }
-
-  .advantages__item:first-child {
-    background: url("../../img/bg-triangle-white.svg") no-repeat 100% top;
   }
 
   .advantages__item {
@@ -214,12 +208,18 @@
     width: 270px;//временно
    }
 
-  .advantages__item:first-child {
-    background: url("../../img/bg-triangle-white.svg") no-repeat 100% 20px;
+  // .advantages__item:first-child {
+  //   background: url("../../img/bg-triangle-white.svg") no-repeat 100% 20px;
+  // }
+
+  .advantages__title {
+    margin: 0;
+    padding: 0;
+    margin-top: 345px;
   }
 
-  .advantages__item:last-child {
-    display: block;
-    margin-left: auto;
+  .advantages__subtitle {
+    background-color: @lightGrey;
+    width: 1200px;
   }
 }
