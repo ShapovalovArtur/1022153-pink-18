@@ -10,7 +10,7 @@
 <body class="body-form">
   <header class="page-header">
     <h2 class="visually-hidden">Мобильное приложение Пинк</h2>
-    <a class="page-header__logo page-header__logo--nav-closed">
+    <a class="page-header__logo page-header__logo--nav-opened">
       <div class="page-header__logo-image"><span class="visually-hidden">Логотип сайта</span></div>
     </a>
 
@@ -150,6 +150,7 @@
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
+    var logoToggle = document.querySelector('.page-header__logo');
 
     navMain.classList.remove('main-nav--nojs');
 
@@ -157,9 +158,13 @@
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');
+        logoToggle.classList.remove('page-header__logo--nav-closed');
+        logoToggle.classList.add('page-header__logo--nav-opened');
       } else {
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
+        logoToggle.classList.remove('page-header__logo--nav-opened');
+        logoToggle.classList.add('page-header__logo--nav-closed');
       }
     });
   </script>
