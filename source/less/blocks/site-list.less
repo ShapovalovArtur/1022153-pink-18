@@ -18,6 +18,14 @@
   padding-top: 17px;
 }
 
+.site-list__item a:hover {
+    color: @lipstick;
+  }
+
+.site-list__item a:active {
+    opacity: 30%;
+  }
+
 @media (min-width: @desktopwidth) {
   .site-list {
     margin-top: 22px;
@@ -50,5 +58,10 @@
     background-color: @white;
     top: 90%;
     left: 0%;
+  }
+
+  .site-list__item a:active {
+    color: @white;
+    opacity: 30%;
   }
 }
