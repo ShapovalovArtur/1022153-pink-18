@@ -54,8 +54,6 @@
 }
 
 .advantages__item:first-child {
-  background: url("../../img/bg-triangle-white.svg") no-repeat top;
-
   .advantages__title {
     margin-top: 97px;
   }
@@ -107,10 +105,6 @@
     width: 660px;//временно
     align-items: flex-end;
     text-align: left;
-  }
-
-  .advantages__item:first-child {
-    background: url("../../img/bg-triangle-white.svg") no-repeat 100% top;
   }
 
   .advantages__item {
@@ -175,35 +169,206 @@
       left: 21px;
       width: 238px;
       height: 275px;
-      fill: @lipstick;
+      fill: #dedede;
     }
+  }
+
+  .advantages__subtitle::after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 38px;
+    bottom: -9px;
+    width: 176px;
+    height: 176px;
+    font-size: 120px;
+    font-weight: bold;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .advantages__subtitle::before {
+    z-index: 2;
+    position: absolute;
+    content: "24";
+    left: 85px;
+    bottom: 53px;
+    width: 100px;
+    height: 100px;
+    font-size: 96px;
+    font-weight: bold;
+    color: #d22856;
   }
 }
 
 @media (min-width: @desktopwidth) {
+  .advantages {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .advantages__slogan {
     width: 1140px;
-    min-height: 255px;// для сетки
+    font-size: 50px;
+    padding-top: 40px;
+  }
+
+  .advantages__slogan--answer {
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-top: -10px; //пока не разобрался со шрифтом
   }
 
   .advantages__list {
-    width: 940px;//временно
-    min-height: 1050px; //временно для сетки
+    width: 1200px;
+    margin-top: 60px;
     flex-direction: row;
-    padding-left: 10px;
-    padding-right: 10px;
     align-items: flex-end;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: @lightGrey;
   }
 
   .advantages__item {
+
     width: 270px;//временно
-    min-height: 230px; //временно для сетки
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 24px;
+  }
+
+  .advantages__item:first-child {
+    .advantages__title {
+      margin-top: 345px;
+    }
   }
 
   .advantages__item:last-child {
-    display: block;
-    margin-left: auto;
+    padding-bottom: 0;
+  }
+
+  .advantages__title {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 345px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: @black;
+    padding-bottom: 25px;
+  }
+
+  .advantages__description {
+    color: @dark;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .advantages__item:first-child::after {
+    content: "";
+    position: absolute;
+    width: 265px;
+    height: 302px;
+    margin-top: -563px;
+    margin-left: -21px;
+    background: url("../../img/iphone-screen-1-desktop@1x.png") no-repeat;
+  }
+
+  .advantages__item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 265px;
+    height: 302px;
+    margin-top: -563px;
+    margin-left: -8px;
+    background: url("../../img/iphone-screen-2-desktop@1x.png") no-repeat;
+  }
+
+  .advantages__item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 265px;
+    height: 302px;
+    margin: 0;
+    margin-top: -563px;
+    background: url("../../img/iphone-screen-3-desktop@1x.png") no-repeat;
+  }
+
+  .advantages__subtitle {
+    background-color: @lightGrey;
+    width: 1200px;
+    padding-bottom: 113px;
+
+    b {
+      margin: 0;
+      margin-top: 132px;
+      margin-left: 496px;
+      width: 350px;
+
+      br {
+        display: none;
+      }
+    }
+
+    span {
+      width: 540px;
+      margin-left: 496px;
+      color: @dark;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 22px;
+    }
+
+    a {
+      display: block;
+      color: @lipstick;
+      margin-left: 497px;
+      margin-top: 31px;
+      line-height: 30px;
+      font-size: 18px;
+    }
+
+    svg {
+      position: absolute;
+      top: 40px;
+      left: 131px;
+      width: 298px;
+      height: 345px;
+      fill: #dedede;
+    }
+  }
+
+  .advantages__subtitle::after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 153px;
+    bottom: 90px;
+    width: 219px;
+    height: 218px;
+    font-size: 120px;
+    font-weight: bold;
+    color: #d22856;
+    border: 17px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .advantages__subtitle::before {
+    z-index: 2;
+    position: absolute;
+    content: "24";
+    left: 210px;
+    bottom: 172px;
+    width: 120px;
+    height: 120px;
+    font-size: 120px;
+    font-weight: bold;
+    color: #d22856;
   }
 }

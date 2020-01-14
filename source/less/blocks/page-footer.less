@@ -1,8 +1,10 @@
 .page-footer {
   width: 280px;
-  min-height: 200px;//grid-temp
   margin: 0 auto;
-  padding: 40px 20px 30px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
 }
 
 .page-footer__logo {
@@ -11,25 +13,102 @@
 }
 
 .page-footer__social {
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-left: 7px;
 }
 
 .page-footer__copyright {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.page-footer__copyright a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
 }
 
 .page-footer--hide {
   display: none;
 }
 
+.page-footer a {
+  .unstyle;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.social__link svg {
+  fill: @lipstick;
+}
+
+.social__link--twitter svg {
+  margin-top: 38%;
+  margin-left: 35%;
+}
+
+.social__link--facebook svg {
+  margin-top: 33%;
+  margin-left: 42%;
+}
+
+.social__link--youtube svg {
+  margin-top: 38%;
+  margin-left: 41%;
+}
+
+.copyright__text {
+  margin-right: 10px;
+  margin-top: 35px;
+}
+
+.copyright__image path {
+  fill: @lipstick;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.social__link::before {
+  position: absolute;
+  content: "";
+  width: 46px;
+  height: 46px;
+  opacity: 0.1;
+  border: solid 3px @dark;
+  border-radius: 50%;
+}
+
+.social__link:hover::before {
+  opacity: 1;
+}
+
+.social__link:active::before {
+  opacity: 0.1;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+}
+
 @media (min-width: @tabletwidth) {
   .page-footer {
     width: 620px;
-    min-height: 68px;
+    min-height: 70px;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 37px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -44,16 +123,24 @@
 
   .page-footer__social {
     margin: unset;
+    margin-left: -14px;
+    margin-top: 15px;
   }
 
   .page-footer__copyright {
+    justify-content: stretch;
     margin-top: unset;
+  }
+
+  .copyright__text {
+    margin-right: -2px;
+    margin-top: 35px;
   }
 }
 
 @media (min-width: @desktopwidth) {
   .page-footer {
-    width: 920px;
+    width: 940px;
     min-height: 70px;
     margin: 0 auto;
     padding-top: 40px;
@@ -66,6 +153,15 @@
   }
 
   .page-footer--hide {
-    display: block;
+    display: flex;
+  }
+
+  .page-footer__copyright {
+    justify-content: stretch;
+  }
+
+  .copyright__text {
+    margin-right: -2px;
+    margin-top: 35px;
   }
 }
