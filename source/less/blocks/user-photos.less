@@ -24,6 +24,9 @@
   padding-right: 35px;
   margin: 0;
   background-color: @white;
+  br {
+    display: none;
+  }
 }
 
 .user-photos__list p {
@@ -57,7 +60,7 @@
   color: @dark;
   padding-left: 17px;
   padding-right: 10px;
-  padding-bottom: 5px; //first only
+  padding-bottom: 5px;
 }
 
 .user-photos__author-name {
@@ -69,7 +72,7 @@
   font-style: normal;
   padding-left: 17px;
   color: @dark;
-  padding-top: 15px; //maybe first only
+  padding-top: 15px;
 }
 
 .user-photos__time {
@@ -85,7 +88,7 @@
   .uppercase;
   padding-left: 49px;
   padding-top: 4px;
-  padding-bottom: 40px; //maybe firschild
+  padding-bottom: 40px;
 }
 
 @media (min-width: @tabletwidth) {
@@ -107,15 +110,36 @@
     padding-bottom: 76px;
     padding-left: 80px;
     padding-right: 80px;
+    br {
+      display: none;
+    }
+  }
+
+  .user-photos__item {
+    width: 300px;
   }
 
   .user-photos__item:not(:first-child) {
     margin-left: 20px;
     margin-top: 20px;
+    .user-photos__text {
+      padding-left: 18px;
+      padding-right: 50px;
+      padding-bottom: 8px;
+    }
+    .user-photos__like {
+      padding-left: 18px;
+      padding-top: 4px;
+      padding-bottom: 22px;
+    }
+    .user-photos__text {
+      height: 48px;
+    }
   }
 
   .user-photos__item:first-child {
     width: 620px;
+    margin-bottom: 30px;
     background-color: @white;
     position: relative;
 
@@ -150,30 +174,37 @@
 @media (min-width: @desktopwidth) {
   .user-photos {
     width: 1200px;
-    min-height: 2400px;//grid-temp
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
   }
 
   .user-photos__title {
-    min-height: 220px;//grid-temp
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 260px;
+    padding-right: 260px;
+    padding-bottom: 88px;
   }
 
   .user-photos__subtitle {
-    min-height: 182px;//grid-temp
+    padding-bottom: 88px;
+    br {
+      display: inline;
+    }
   }
-}
 
-@media (min-width: @desktopwidth) {
   .user-photos__list {
-    min-height: 1800px; //grid-temp
+
     justify-content: center;
   }
 
   .user-photos__item {
-    height: 560px;//grid-temp
-    width: 300px; //grid-temp
+    width: 300px;
   }
+
+  .user-photos__author-image--top {
+    width: 100%;
+    margin: 0;
+    height: 506px;
+  }
+
 
   .user-photos__item:not(:first-child) {
     margin-left: 20px;
@@ -182,7 +213,16 @@
 
   .user-photos__item:first-child {
     width: 100%;
-    height: 600px;//grid-temp
     margin-bottom: 0;
+    .user-photos__author-name {
+      width: 913px;
+      margin: 0 auto;
+    }
+    .user-photos__text {
+      width: 890px;
+      margin: 0 auto;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 }

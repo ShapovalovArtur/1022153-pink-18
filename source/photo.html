@@ -38,13 +38,18 @@
   <main class="page-main">
     <section class="user-photos">
       <h1 class="user-photos__title">Фотографии пользователей</h1>
-      <p class="user-photos__subtitle">Взгляните на фотографии, которые выкладывают пользователи!
+      <p class="user-photos__subtitle">Взгляните на фотографии, которые выкладывают пользователи!<br>
         Видите, как не хватает ваших?</p>
       <ul class="user-photos__list">
         <li class="user-photos__item">
           <p class="user-photos__author-picture">
-            <img class="user-photos__author-image user-photos__author-image--top" src="img/panorama-mobile@1x.jpg"
-              width="320" height="137" alt="Фото Анны">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="user-photos__author-image user-photos__author-image--top" src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
+            </picture>
           </p>
           <cite class="user-photos__author-name">Анна <span class="user-photos__time">(5 минут назад)</span></cite>
           <p class="user-photos__text">
@@ -56,8 +61,16 @@
         </li>
         <li class="user-photos__item">
           <p class="user-photos__author-picture">
-            <img class="user-photos__author-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180"
-              alt="Фото Левона">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)"
+                srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x">
+              <img class="user-photos__author-image" src="img/photo-car-mobile@1x.jpg"
+                srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото Левона">
+            </picture>
           </p>
           <cite class="user-photos__author-name">Левон <span class="user-photos__time">(5 часов назад)</span></cite>
           <p class="user-photos__text">
@@ -69,8 +82,16 @@
         </li>
         <li class="user-photos__item">
           <p class="user-photos__author-picture">
-            <img class="user-photos__author-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-              alt="Фото Антона">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)"
+                srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x">
+              <img class="user-photos__author-image" src="img/photo-drumset-mobile@1x.jpg"
+                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото Антона">
+            </picture>
           </p>
           <cite class="user-photos__author-name">Антон <span class="user-photos__time">(12 часов назад)</span></cite>
           <p class="user-photos__text">
@@ -82,8 +103,16 @@
         </li>
         <li class="user-photos__item">
           <p class="user-photos__author-picture">
-            <img class="user-photos__author-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-              alt="Фото Бориса">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)"
+                srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x">
+              <img class="user-photos__author-image" src="img/photo-window-mobile@1x.jpg"
+                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото Бориса">
+            </picture>
           </p>
           <cite class="user-photos__author-name">Борис <span class="user-photos__time">(20 часов назад)</span></cite>
           <p class="user-photos__text">
@@ -95,8 +124,16 @@
         </li>
         <li class="user-photos__item">
           <p class="user-photos__author-picture">
-            <img class="user-photos__author-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
-              alt="Фото Сергея">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)"
+                srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x">
+              <img class="user-photos__author-image" src="img/photo-fair-mobile@1x.jpg"
+                srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото Сергея">
+            </picture>
           </p>
           <cite class="user-photos__author-name">Сергей <span class="user-photos__time">(25 часов назад)</span></cite>
           <p class="user-photos__text">
@@ -108,8 +145,16 @@
         </li>
         <li class="user-photos__item">
           <p class="user-photos__author-picture">
-            <img class="user-photos__author-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
-              alt="Фото Максима">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)"
+                srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x">
+              <img class="user-photos__author-image" src="img/photo-pov-mobile@1x.jpg"
+                srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото Максима">
+            </picture>
           </p>
           <cite class="user-photos__author-name">Максим <span class="user-photos__time">(40 часов назад)</span></cite>
           <p class="user-photos__text">
@@ -121,8 +166,16 @@
         </li>
         <li class="user-photos__item">
           <p class="user-photos__author-picture">
-            <img class="user-photos__author-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
-              alt="Фото Надежды">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)"
+                srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x">
+              <img class="user-photos__author-image" src="img/photo-wing-mobile@1x.jpg"
+                srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото Надежды">
+            </picture>
           </p>
           <cite class="user-photos__author-name">Надежда <span class="user-photos__time">(45 часов назад)</span></cite>
           <p class="user-photos__text">
