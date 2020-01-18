@@ -5,6 +5,11 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 90px;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .user-photos__title {
@@ -24,6 +29,7 @@
   padding-right: 35px;
   margin: 0;
   background-color: @white;
+
   br {
     display: none;
   }
@@ -95,6 +101,11 @@
   .user-photos {
     width: 660px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .user-photos__title {
@@ -110,6 +121,7 @@
     padding-bottom: 76px;
     padding-left: 80px;
     padding-right: 80px;
+
     br {
       display: none;
     }
@@ -122,18 +134,18 @@
   .user-photos__item:not(:first-child) {
     margin-left: 20px;
     margin-top: 20px;
+
     .user-photos__text {
       padding-left: 18px;
       padding-right: 50px;
       padding-bottom: 8px;
+      height: 48px;
     }
+
     .user-photos__like {
       padding-left: 18px;
       padding-top: 4px;
       padding-bottom: 22px;
-    }
-    .user-photos__text {
-      height: 48px;
     }
   }
 
@@ -175,6 +187,10 @@
   .user-photos {
     width: 1200px;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-size: 2550px auto;
+    }
   }
 
   .user-photos__title {
@@ -185,6 +201,7 @@
 
   .user-photos__subtitle {
     padding-bottom: 88px;
+
     br {
       display: inline;
     }
@@ -214,10 +231,12 @@
   .user-photos__item:first-child {
     width: 100%;
     margin-bottom: 0;
+
     .user-photos__author-name {
       width: 913px;
       margin: 0 auto;
     }
+
     .user-photos__text {
       width: 890px;
       margin: 0 auto;
